@@ -1,0 +1,242 @@
+{
+	"id": "4525f515-715c-45f0-90a5-395033e1afee",
+	"name": "Restful Booker",
+	"timestamp": "2024-10-10T18:39:30.313Z",
+	"collection_id": "31495007-9e800ca3-8884-471c-ba86-60836ae51c92",
+	"folder_id": 0,
+	"environment_id": "31495007-61c77faf-7ddf-4d05-9f76-3e50691d6737",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-10-10T18:39:27.178Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a88c6ff1-8209-474d-b758-4a1aaa55916b",
+			"name": "Auth - CreateToken",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 566,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				566
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "22b3ef9b-c5cb-431f-99a0-d518382550ea",
+			"name": "Booking - GetBookingIds",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 422,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				422
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ab579644-af60-4d7c-ac70-f5d58c548459",
+			"name": "Booking - GetBookingIds By Name",
+			"url": "https://restful-booker.herokuapp.com/booking?firstname=Eric&lastname=Jackson",
+			"time": 146,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				146
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c2f6bac9-63e9-4200-93f6-844edefc5b4b",
+			"name": "Booking - GetBookingIds By Date",
+			"url": "https://restful-booker.herokuapp.com/booking?checkin=2014-03-13&checkout=2024-05-2",
+			"time": 152,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				152
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d6a5b848-ff6b-4ad1-af6b-08573f788bb5",
+			"name": "Booking - GetBooking By Id",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 144,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				144
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "10fd9d89-f3bf-41b0-8c1e-c6041c34dd00",
+			"name": "Booking - CreateBooking",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 143,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				143
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1bd59e5e-77b6-4ed2-8ecd-13dc7200593c",
+			"name": "Booking - UpdateBooking",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 144,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				144
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "967312cd-671e-4be2-9dc7-d913f58becf8",
+			"name": "Booking - PartialUpdateBooking",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 141,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				141
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f4bed94a-430e-4c39-99c2-7e596d891ae8",
+			"name": "Booking - DeleteBooking",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 143,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				143
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8b77b4b3-0a5c-44f4-aace-e969e479340d",
+			"name": "Ping - HealthCheck",
+			"url": "https://restful-booker.herokuapp.com/ping",
+			"time": 142,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				142
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2143,
+	"collection": {
+		"requests": [
+			{
+				"id": "a88c6ff1-8209-474d-b758-4a1aaa55916b",
+				"method": "POST"
+			},
+			{
+				"id": "22b3ef9b-c5cb-431f-99a0-d518382550ea",
+				"method": "GET"
+			},
+			{
+				"id": "ab579644-af60-4d7c-ac70-f5d58c548459",
+				"method": "GET"
+			},
+			{
+				"id": "c2f6bac9-63e9-4200-93f6-844edefc5b4b",
+				"method": "GET"
+			},
+			{
+				"id": "d6a5b848-ff6b-4ad1-af6b-08573f788bb5",
+				"method": "GET"
+			},
+			{
+				"id": "10fd9d89-f3bf-41b0-8c1e-c6041c34dd00",
+				"method": "POST"
+			},
+			{
+				"id": "1bd59e5e-77b6-4ed2-8ecd-13dc7200593c",
+				"method": "PUT"
+			},
+			{
+				"id": "967312cd-671e-4be2-9dc7-d913f58becf8",
+				"method": "PATCH"
+			},
+			{
+				"id": "f4bed94a-430e-4c39-99c2-7e596d891ae8",
+				"method": "DELETE"
+			},
+			{
+				"id": "8b77b4b3-0a5c-44f4-aace-e969e479340d",
+				"method": "GET"
+			}
+		]
+	}
+}
